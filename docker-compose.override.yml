@@ -1,0 +1,11 @@
+version: '3.0'
+
+services:
+  api:
+    build: .
+    volumes:
+    - ./api:/app
+  client:
+    build: .
+    volumes:
+    - ./client:/app

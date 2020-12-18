@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.HttpError = void 0;
+class HttpError extends Error {
+    constructor(errorCode, message, errorMsg) {
+        super(message);
+        this.errorCode = errorCode;
+        this._errorMsg = errorMsg;
+    }
+    get errorMsg() {
+        return this._errorMsg;
+    }
+}
+exports.HttpError = HttpError;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSHR0cEVycm9yLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vLi4vc3JjL2NvcmUvZXJyb3IvSHR0cEVycm9yLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUFBLE1BQWEsU0FBVSxTQUFRLEtBQUs7SUFJaEMsWUFBWSxTQUFpQixFQUFFLE9BQWdCLEVBQUUsUUFBYztRQUMzRCxLQUFLLENBQUMsT0FBTyxDQUFDLENBQUM7UUFDZixJQUFJLENBQUMsU0FBUyxHQUFHLFNBQVMsQ0FBQztRQUMzQixJQUFJLENBQUMsU0FBUyxHQUFHLFFBQVEsQ0FBQztJQUM5QixDQUFDO0lBRUQsSUFBSSxRQUFRO1FBQ1IsT0FBTyxJQUFJLENBQUMsU0FBUyxDQUFDO0lBQzFCLENBQUM7Q0FDSjtBQWJELDhCQWFDIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGNsYXNzIEh0dHBFcnJvciBleHRlbmRzIEVycm9yIHtcbiAgICBwdWJsaWMgZXJyb3JDb2RlOiBudW1iZXI7XG4gICAgcHJpdmF0ZSByZWFkb25seSBfZXJyb3JNc2c6IGFueTtcblxuICAgIGNvbnN0cnVjdG9yKGVycm9yQ29kZTogbnVtYmVyLCBtZXNzYWdlPzogc3RyaW5nLCBlcnJvck1zZz86IGFueSkge1xuICAgICAgICBzdXBlcihtZXNzYWdlKTtcbiAgICAgICAgdGhpcy5lcnJvckNvZGUgPSBlcnJvckNvZGU7XG4gICAgICAgIHRoaXMuX2Vycm9yTXNnID0gZXJyb3JNc2c7XG4gICAgfVxuXG4gICAgZ2V0IGVycm9yTXNnKCk6IGFueSB7XG4gICAgICAgIHJldHVybiB0aGlzLl9lcnJvck1zZztcbiAgICB9XG59XG4iXX0=

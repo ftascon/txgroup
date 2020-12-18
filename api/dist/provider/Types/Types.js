@@ -1,0 +1,8 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.TYPES = void 0;
+const TYPES = {
+    HttpRequestClient: "HttpRequestClient"
+};
+exports.TYPES = TYPES;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVHlwZXMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi9zcmMvcHJvdmlkZXIvVHlwZXMvVHlwZXMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsTUFBTSxLQUFLLEdBQUc7SUFDVixpQkFBaUIsRUFBRSxtQkFBbUI7Q0FDekMsQ0FBQztBQUVPLHNCQUFLIiwic291cmNlc0NvbnRlbnQiOlsiY29uc3QgVFlQRVMgPSB7XG4gICAgSHR0cFJlcXVlc3RDbGllbnQ6IFwiSHR0cFJlcXVlc3RDbGllbnRcIlxufTtcblxuZXhwb3J0IHsgVFlQRVMgfTtcbiJdfQ==

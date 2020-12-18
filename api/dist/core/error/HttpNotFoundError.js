@@ -1,0 +1,7 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.HttpNotFoundError = void 0;
+class HttpNotFoundError extends Error {
+}
+exports.HttpNotFoundError = HttpNotFoundError;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSHR0cE5vdEZvdW5kRXJyb3IuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi9zcmMvY29yZS9lcnJvci9IdHRwTm90Rm91bmRFcnJvci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSxNQUFhLGlCQUFrQixTQUFRLEtBQUs7Q0FFM0M7QUFGRCw4Q0FFQyIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBjbGFzcyBIdHRwTm90Rm91bmRFcnJvciBleHRlbmRzIEVycm9yIHtcblxufVxuIl19

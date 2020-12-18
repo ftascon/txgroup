@@ -1,0 +1,3 @@
+interface SerializableObject {
+    serialize(): any;
+}

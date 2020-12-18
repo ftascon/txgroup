@@ -1,0 +1,13 @@
+version: '3.0'
+
+services:
+  api:
+    container_name: txg-api
+    hostname: txg-api
+    image: txg-api
+    ports: ['8080:8080']
+  client:
+    container_name: txg-client
+    hostname: txg-client
+    image: txg-client
+    ports: ['3030:3030']
