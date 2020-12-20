@@ -1,0 +1,7 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.HttpTimeoutError = void 0;
+class HttpTimeoutError extends Error {
+}
+exports.HttpTimeoutError = HttpTimeoutError;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSHR0cFRpbWVvdXRFcnJvci5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3NyYy9jb3JlL2Vycm9yL0h0dHBUaW1lb3V0RXJyb3IudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsTUFBYSxnQkFBaUIsU0FBUSxLQUFLO0NBRTFDO0FBRkQsNENBRUMiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgY2xhc3MgSHR0cFRpbWVvdXRFcnJvciBleHRlbmRzIEVycm9yIHtcblxufVxuIl19

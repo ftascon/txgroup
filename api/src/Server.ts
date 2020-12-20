@@ -5,6 +5,7 @@ import * as express from "express";
 import {InversifyExpressServer} from "inversify-express-utils";
 import {Kernel} from "./provider/Kernel";
 import "./provider/Providers/ControllerProvider";
+import {MainProvider} from "./provider/Providers/MainProvider";
 
 export class Server {
 
@@ -14,6 +15,8 @@ export class Server {
 
     constructor() {
         this._container = new Kernel({defaultScope: "Singleton"});
+
+        MainProvider.register(this.container);
 
         this.server = new InversifyExpressServer(this._container.container, this.buildRouter());
 

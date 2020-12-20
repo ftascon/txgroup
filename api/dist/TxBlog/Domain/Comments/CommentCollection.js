@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.CommentCollection = void 0;
+const Collection_1 = require("../../../core/ddd-lib/Collection");
+const Comment_1 = require("./Comment");
+class CommentCollection extends Collection_1.Collection {
+    validateAdd(object) {
+        return object instanceof Comment_1.Comment;
+    }
+}
+exports.CommentCollection = CommentCollection;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ29tbWVudENvbGxlY3Rpb24uanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi9zcmMvVHhCbG9nL0RvbWFpbi9Db21tZW50cy9Db21tZW50Q29sbGVjdGlvbi50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSxpRUFBNEQ7QUFDNUQsdUNBQWtDO0FBRWxDLE1BQWEsaUJBQWtCLFNBQVEsdUJBQVU7SUFDbkMsV0FBVyxDQUFDLE1BQVc7UUFDN0IsT0FBTyxNQUFNLFlBQVksaUJBQU8sQ0FBQztJQUNyQyxDQUFDO0NBQ0o7QUFKRCw4Q0FJQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7Q29sbGVjdGlvbn0gZnJvbSBcIi4uLy4uLy4uL2NvcmUvZGRkLWxpYi9Db2xsZWN0aW9uXCI7XG5pbXBvcnQge0NvbW1lbnR9IGZyb20gXCIuL0NvbW1lbnRcIjtcblxuZXhwb3J0IGNsYXNzIENvbW1lbnRDb2xsZWN0aW9uIGV4dGVuZHMgQ29sbGVjdGlvbiB7XG4gICAgcHJvdGVjdGVkIHZhbGlkYXRlQWRkKG9iamVjdDogYW55KTogYm9vbGVhbiB7XG4gICAgICAgIHJldHVybiBvYmplY3QgaW5zdGFuY2VvZiBDb21tZW50O1xuICAgIH1cbn1cbiJdfQ==

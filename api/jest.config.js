@@ -9,7 +9,7 @@ module.exports = {
         "js",
     ],
     coveragePathIgnorePatterns: [
-        "/src/Visas/Infrastructure/",
+        "/src/txGroup/Infrastructure/",
         "/node_modules/",
         "/test/",
         "/src/core/",

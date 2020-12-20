@@ -1,0 +1,9 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.REPOSITORY_TYPES = void 0;
+const REPOSITORY_TYPES = {
+    PostRepository: "PostRepository",
+    CommentRepository: "CommentRepository",
+};
+exports.REPOSITORY_TYPES = REPOSITORY_TYPES;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUmVwb3NpdG9yeVR5cGVzLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vLi4vc3JjL3Byb3ZpZGVyL1R5cGVzL1JlcG9zaXRvcnlUeXBlcy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSxNQUFNLGdCQUFnQixHQUFHO0lBQ3JCLGNBQWMsRUFBRSxnQkFBZ0I7SUFDaEMsaUJBQWlCLEVBQUUsbUJBQW1CO0NBQ3pDLENBQUM7QUFFTSw0Q0FBZ0IiLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCBSRVBPU0lUT1JZX1RZUEVTID0ge1xuICAgIFBvc3RSZXBvc2l0b3J5OiBcIlBvc3RSZXBvc2l0b3J5XCIsXG4gICAgQ29tbWVudFJlcG9zaXRvcnk6IFwiQ29tbWVudFJlcG9zaXRvcnlcIixcbn07XG5cbmV4cG9ydCB7UkVQT1NJVE9SWV9UWVBFU307XG4iXX0=

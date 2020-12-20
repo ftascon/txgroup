@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.MainProvider = void 0;
+const Provider_1 = require("./Provider");
+const ApplicationProvider_1 = require("./ApplicationProvider");
+class MainProvider extends Provider_1.Provider {
+    static register(kernel) {
+        ApplicationProvider_1.ApplicationProvider.register(kernel);
+    }
+}
+exports.MainProvider = MainProvider;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTWFpblByb3ZpZGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vLi4vc3JjL3Byb3ZpZGVyL1Byb3ZpZGVycy9NYWluUHJvdmlkZXIudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQ0EseUNBQW9DO0FBQ3BDLCtEQUEwRDtBQUUxRCxNQUFhLFlBQWEsU0FBUSxtQkFBUTtJQUMvQixNQUFNLENBQUMsUUFBUSxDQUFDLE1BQWM7UUFDakMseUNBQW1CLENBQUMsUUFBUSxDQUFDLE1BQU0sQ0FBQyxDQUFDO0lBQ3pDLENBQUM7Q0FDSjtBQUpELG9DQUlDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHtLZXJuZWx9IGZyb20gXCIuLi9LZXJuZWxcIjtcbmltcG9ydCB7UHJvdmlkZXJ9IGZyb20gXCIuL1Byb3ZpZGVyXCI7XG5pbXBvcnQge0FwcGxpY2F0aW9uUHJvdmlkZXJ9IGZyb20gXCIuL0FwcGxpY2F0aW9uUHJvdmlkZXJcIjtcblxuZXhwb3J0IGNsYXNzIE1haW5Qcm92aWRlciBleHRlbmRzIFByb3ZpZGVyIHtcbiAgICBwdWJsaWMgc3RhdGljIHJlZ2lzdGVyKGtlcm5lbDogS2VybmVsKSB7XG4gICAgICAgIEFwcGxpY2F0aW9uUHJvdmlkZXIucmVnaXN0ZXIoa2VybmVsKTtcbiAgICB9XG59XG4iXX0=

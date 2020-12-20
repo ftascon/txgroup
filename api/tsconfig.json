@@ -9,12 +9,11 @@
     "inlineSourceMap": true,
     "inlineSources": true,
     "experimentalDecorators": true,
-    "emitDecoratorMetadata": true
+    "emitDecoratorMetadata": true,
+    "strictPropertyInitialization": false
   },
   "exclude": [
     "test",
-    "test-functional",
-    "test-bdd",
     "node_modules"
   ]
 }

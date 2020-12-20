@@ -2,6 +2,8 @@ var debug = require('debug')('app');
 const server = require("../dist/Server");
 const app = server.Server.bootstrap().app;
 const config = require("../dist/config");
+const dotenv = require('dotenv');
+dotenv.config({path: __dirname + "/../.env"});
 
 app.set('port', process.env.PORT || 8080);
 
