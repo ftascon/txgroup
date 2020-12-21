@@ -8,12 +8,13 @@ export class Post extends Component {
         return (
             post ? (
                 <div className={"post"}>
-                    <h1>{post.title}</h1>
-                    <img src={post.image} alt={post.title}/>
-                    <div>{post.content}</div>
-                    <h3>
-                        <NavLink to={"/posts/" + post.id + "/comments"}> Show all comments </NavLink>
-                    </h3>
+                    <div className={"mainPost"}>
+                        <h1>{post.title}</h1>
+                        <div>{post.content}</div>
+                        <p className={"showAllComments"}>
+                            <NavLink to={"/posts/" + post.id + "/comments"}> Show all comments </NavLink>
+                        </p>
+                    </div>
                     <Comments comments={post.comments} showAll={false}/>
                 </div>
             ) : (

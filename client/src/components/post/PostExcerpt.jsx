@@ -9,9 +9,9 @@ export class PostExcerpt extends Component {
                     <NavLink to={"/posts/"+this.props.post.id}> {this.props.post.title}</NavLink>
                 </h1>
                 <div>
-                    {this.props.post.content}
+                    {this.props.post.content.slice(0, 200)}
                 </div>
-
+                <p><span className={"commentNumber"}>{this.props.post.comments.length}</span></p>
             </div>
         );
     };

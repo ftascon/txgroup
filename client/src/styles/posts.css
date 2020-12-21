@@ -1,0 +1,43 @@
+.main .mainPost,
+.main .postList {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.main .postList .post {
+    color: #8f8f8f;
+    background-color: #ffffff;
+    padding: 30px 40px;
+    margin: 20px 0;
+    font-family: 'Mukta', sans-serif;
+}
+
+.main .postList .post h1 {
+    margin: 0 0 15px 0;
+    padding: 0;
+    color: #000000;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
+
+.main .postList .post p span.commentNumber {
+    font-family: 'Mukta', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    background-image: url("/images/comment.svg");
+    background-repeat: no-repeat;
+    background-position: left 20%;
+    padding: 5px 12px 12px 30px;
+    text-align: center;
+}
+
+.main .mainPost .showAllComments a {
+    color: #000000;
+    background-color: #eceae9;
+    padding: 20px 30px;
+}
+
+.main .mainPost p.showAllComments{
+    margin: 50px 0;
+}

@@ -12,6 +12,7 @@ export class List extends Component {
                         )
                     })
                 }
+                <div className={"clear"}/>
             </div>
         )
     };

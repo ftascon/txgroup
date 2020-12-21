@@ -1,0 +1,17 @@
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header ul li {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+header ul li a {
+    background-color: #eceae9;
+    display: block;
+    line-height: 80px;
+}
