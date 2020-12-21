@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import {BrowserRouter, Route, Switch} from "react-router-dom";
 import "./styles/global.css";
 import "./styles/header.css";
+import "./styles/content.css";
 import {Main} from "./pages/Main";
 import {PostPage} from "./pages/PostPage";
 import {CommentPage} from "./pages/CommentPage";

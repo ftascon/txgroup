@@ -2,7 +2,6 @@ import React, {Component} from "react";
 import {getPosts} from "../services/posts";
 import {Header} from "../components/parts/Header";
 import {List} from "../components/post/List";
-import "./../styles/posts.css";
 
 export class Main extends Component {
 

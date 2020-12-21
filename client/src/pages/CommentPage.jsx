@@ -2,7 +2,6 @@ import React, {Component} from "react";
 import {getComments} from "../services/comments";
 import {Header} from "../components/parts/Header";
 import {Comments} from "../components/comment/Comments";
-import "./../styles/comments.css";
 
 export class CommentPage extends Component {
 
