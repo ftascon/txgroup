@@ -1,15 +1,9 @@
 import "reflect-metadata";
 // @ts-ignore
 import * as TypeMoq from "typemoq";
-import {PostRepository} from "../../../../../src/TxBlog/Domain/Posts/PostRepository";
-import {FsPostRepository} from "../../../../../src/TxBlog/Infrastructure/Repositories/FsPostRepository";
-import {Post} from "../../../../../src/TxBlog/Domain/Posts/Post";
 import {CommentCollection} from "../../../../../src/TxBlog/Domain/Comments/CommentCollection";
 import {Author} from "../../../../../src/TxBlog/Domain/Author/Author";
-import {PostsResponse} from "../../../../../src/TxBlog/Application/Post/Response/PostsResponse";
-import {PostCollection} from "../../../../../src/TxBlog/Domain/Posts/PostCollection";
 import {Comment} from "../../../../../src/TxBlog/Domain/Comments/Comment";
-import {GetPostsUseCase} from "../../../../../src/TxBlog/Application/Post/UseCase/GetPostsUseCase";
 import {CommentRepository} from "../../../../../src/TxBlog/Domain/Comments/CommentRepository";
 import {FsCommentRepository} from "../../../../../src/TxBlog/Infrastructure/Repositories/FsCommentRepository";
 import {GetCommentsUseCase} from "../../../../../src/TxBlog/Application/Comment/UseCase/GetCommentsUseCase";

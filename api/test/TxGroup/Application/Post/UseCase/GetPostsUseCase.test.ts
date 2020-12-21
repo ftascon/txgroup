@@ -6,7 +6,6 @@ import {FsPostRepository} from "../../../../../src/TxBlog/Infrastructure/Reposit
 import {Post} from "../../../../../src/TxBlog/Domain/Posts/Post";
 import {CommentCollection} from "../../../../../src/TxBlog/Domain/Comments/CommentCollection";
 import {Author} from "../../../../../src/TxBlog/Domain/Author/Author";
-import {PostsResponse} from "../../../../../src/TxBlog/Application/Post/Response/PostsResponse";
 import {PostCollection} from "../../../../../src/TxBlog/Domain/Posts/PostCollection";
 import {Comment} from "../../../../../src/TxBlog/Domain/Comments/Comment";
 import {GetPostsUseCase} from "../../../../../src/TxBlog/Application/Post/UseCase/GetPostsUseCase";
@@ -36,7 +35,7 @@ describe("Test get posts", () => {
             obj.getPosts();
         }, TypeMoq.Times.exactly(1));
 
-        let response = new PostsResponse(getResult());
+        let response = getResult();
         expect(result.serialize()).toEqual(response.serialize());
 
         done();

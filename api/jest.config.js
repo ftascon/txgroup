@@ -2,7 +2,7 @@
 module.exports = {
     preset: "ts-jest",
     testEnvironment: "node",
-    testRegex: "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx)$",
+    testMatch: [ "<rootDir>/test/**/*ts"],
     moduleFileExtensions: [
         "ts",
         "tsx",
@@ -10,6 +10,7 @@ module.exports = {
     ],
     coveragePathIgnorePatterns: [
         "/src/txGroup/Infrastructure/",
+        "/src/",
         "/node_modules/",
         "/test/",
         "/src/core/",

@@ -2,6 +2,7 @@
 /// <reference path="../node_modules/reflect-metadata/reflect-metadata.d.ts" />
 import "reflect-metadata";
 import * as express from "express";
+import * as cors from "cors";
 import {InversifyExpressServer} from "inversify-express-utils";
 import {Kernel} from "./provider/Kernel";
 import "./provider/Providers/ControllerProvider";
@@ -19,6 +20,14 @@ export class Server {
         MainProvider.register(this.container);
 
         this.server = new InversifyExpressServer(this._container.container, this.buildRouter());
+
+        this.server.setConfig((app) => {
+            // CORS
+            let corsOptions = {
+                origin: 'http://localhost:3030',
+            };
+            app.use(cors());
+        });
 
         this.app = this.buildApp();
 
