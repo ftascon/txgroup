@@ -1,20 +1,21 @@
-const express = require('express');
-const path = require('path');
-const app = express(),
-    bodyParser = require("body-parser"),
-    port = 3030;
+import express from "express";
+import compression from "compression";
+import index from "./routes/index";
+import path from "path";
+import * as dotenv from "dotenv";
+import config from "./config";
+dotenv.config({path: __dirname + "/../.env"});
 
-app.use(bodyParser.json());
+const app = express();
 
-app.get('/api/todos', (req, res) => {
-    console.log('api/todos called!');
-    res.json(tasks);
-});
+app.set("views", path.join(__dirname, 'static', "views"));
+app.set("view engine", "ejs");
 
-app.get('/', (req,res) => {
-    res.send(`<h1>API Running on the port ${port}</h1>`);
-});
+app.use(compression());
+app.use('/public', express.static(path.join(__dirname, 'static', 'public')));
 
-app.listen(port, () => {
-    console.log(`Server listening on the port:${port}`);
+app.use("/", index);
+
+app.listen(config.port, function listenHandler() {
+    console.info(`Server port: ${config.port}`)
 });

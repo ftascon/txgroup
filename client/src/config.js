@@ -4,5 +4,5 @@ dotenv.config({path: __dirname + "/../.env"});
 
 export default {
     api_url: process.env.API_URL,
-    local_port: process.env.PORT
+    port: process.env.PORT
 };
